@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_gl">
+
+    <fragment
+        android:id="@+id/navigation_recomend"
+        android:name="com.example.cinema2.ui.recomend.RecomendFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_recomend" />
+
+    <fragment
+        android:id="@+id/navigation_gl"
+        android:name="com.example.cinema2.ui.gl.GlFragment"
+        android:label="Главная"
+        tools:layout="@layout/fragment_gl" />
+
+    <fragment
+        android:id="@+id/navigation_collections"
+        android:name="com.example.cinema2.ui.collections.CollectionsFragment"
+        android:label="Коллекции"
+        tools:layout="@layout/fragment_collections" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.cinema2.ui.Profile.Profile"
+        android:label="Профиль"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
