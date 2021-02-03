@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/kor"
+    android:layout_marginBottom="56dp"
+    android:layout_height="match_parent"
+    tools:context=".ui.gl.GlFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/filmimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gl_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/filmname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="88dp"
+                android:src="@drawable/namefilm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/filmimage" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="128dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="105dp"
+                android:layout_marginEnd="116dp"
+                android:layout_marginRight="116dp"
+                android:background="@color/orange"
+                android:text="Смотреть"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/filmimage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/filmname" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="В тренде"
+            android:textColor="@color/orange"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="22dp"
+            android:textSize="24dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/intrend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вы смотрели"
+            android:textColor="@color/orange"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="22dp"
+            android:textSize="24dp" />
+    <ImageView
+        android:layout_marginTop="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gl_image"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Новое"
+            android:textColor="@color/orange"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="22dp"
+            android:textSize="24dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/newrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Для вас"
+            android:textColor="@color/orange"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="22dp"
+            android:textSize="24dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/forme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/orange"
+            android:text="Указать интересы"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
