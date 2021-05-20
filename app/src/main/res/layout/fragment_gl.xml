@@ -41,7 +41,7 @@
                 app:layout_constraintTop_toTopOf="@+id/filmimage" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button"
+                android:id="@+id/watch"
                 android:layout_width="128dp"
                 android:layout_height="44dp"
                 android:layout_marginStart="116dp"
@@ -73,6 +73,7 @@
             android:layout_marginLeft="16dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:id="@+id/intrend"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -103,6 +104,7 @@
             android:layout_marginLeft="16dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:id="@+id/newrecycler"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
@@ -119,6 +121,7 @@
             android:layout_marginLeft="16dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:id="@+id/forme"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />

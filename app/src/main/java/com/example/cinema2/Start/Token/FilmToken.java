@@ -1,4 +1,4 @@
-package com.example.cinema2.Start;
+package com.example.cinema2.Start.Token;
 
 public class FilmToken {
     String movieId,backgroundImage,foregroundImage;

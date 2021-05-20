@@ -12,18 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cinema2"
         android:usesCleartextTraffic="true">
+        <activity android:name=".WatchActivity"></activity>
         <activity
             android:name=".GlActivity"
-            android:label="@string/title_activity_gl"></activity>
-        <activity android:name=".Start.Reg.RegActivity" />
-        <activity android:name=".Start.Splash.SplashScreen">
+            android:label="@string/title_activity_gl">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Start.Main.MainActivity"></activity>
+        <activity android:name=".Start.Reg.RegActivity" />
+        <activity android:name=".Start.Splash.SplashScreen"></activity>
+        <activity android:name=".Start.Main.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
